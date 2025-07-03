@@ -1,74 +1,95 @@
-# 🏡 House Price Prediction Project
+🏠 House Price Prediction using Machine Learning
+This project predicts the selling price of a house based on features like location, area, number of bedrooms, and more. The model is trained on a dataset of house listings and served using a simple Python backend.
 
-This project predicts house prices based on various features using machine learning techniques. The goal is to build a regression model that accurately estimates the price of a house based on the input data.
+📁 Project Structure
+bash
+Copy
+Edit
+house-price-prediction/
+│
+├── House Price Prediction Dataset.csv      # Dataset used for training
+├── house_price_prediction.ipynb            # Jupyter notebook for model building
+├── house_price_model.pkl                   # Trained ML model (Pickle file)
+├── houseprice.py                           # Python backend for predictions (Flask or Streamlit)
+├── requirements.txt                        # Python dependencies
+└── README.md                               # Project documentation
+✅ Features
+Data cleaning and preprocessing
 
----
+Feature engineering (encoding, handling missing values)
 
-## 📁 Project Structure
+Model training and evaluation
 
+Deployment-ready prediction script
 
----
+Interactive prediction UI using Streamlit or Flask
 
-## 📊 Dataset
+📊 Dataset Overview
+The dataset includes features such as:
 
-The dataset contains features such as:
-- Number of rooms
-- Area (sq ft)
-- Location
-- Year built
-- And other relevant property attributes
+🏙️ Location
 
----
+📐 Area (sqft)
 
-## 🧠 Model
+🛏️ Number of Bedrooms
 
-- Model Type: Regression
-- Algorithms Used: (Linear Regression etc.)
-- Evaluation Metrics: RMSE, MAE, R² score
+🛁 Number of Bathrooms
 
----
+🏷️ Price (Target variable)
 
-# Install Dependencies
--pip install -r requirements.txt
+🧠 Technologies Used
+Python (Pandas, NumPy, Scikit-learn)
 
+Jupyter Notebook
 
----
-# 💻Run the notebook
-jupyter notebook
-house_price_prediction.ipynb
+Machine Learning: Linear Regression
 
+Model Serialization: pickle
 
----
-# or Run the python script
+Web Framework: Streamlit or Flask
+
+⚙️ How to Run
+1. Clone the repository
+bash
+Copy
+Edit
+git clone https://github.com/Ayush9227/house-price-prediction.git
+cd house-price-prediction
+2. Install dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+3. Run the app
+If using Flask:
+
+bash
+Copy
+Edit
 python houseprice.py
+If using Streamlit:
 
+bash
+Copy
+Edit
+streamlit run houseprice.py
+4. Make predictions
+Enter house features in the UI (area, location, BHK, etc.) and get the predicted price instantly.
 
----
-# 📈 Output
+📈 Model Evaluation
+Algorithm Used: Linear Regression
 
-Predicts house prices based on user input or test data
+Metrics: MAE, RMSE
 
-Can be deployed or integrated with web interfaces in future
+Performance: Evaluated on test split and cross-validation
 
+💡 Future Improvements
+Improve model accuracy using Random Forest or XGBoost
 
----
-# 🚀 Future Improvements
+Add more features like amenities, parking, etc.
 
-Improve accuracy with hyperparameter tuning
+Deploy on platforms like Render, Heroku, or Streamlit Cloud
 
-Expand dataset for better generalization
-
----
-
-# 🙋‍♂ Author
-
+🙋‍♂️ Author
 Ayush Guha
-B.Tech CSE Student
-Email: [ayushguha2003@gmail.com]
-GitHub: https://github.com/Ayush9227
-
-
----
-
-
-
+GitHub: Ayush9227
